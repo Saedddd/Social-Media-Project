@@ -17,7 +17,15 @@ const Navbar = () => {
   return (
     <>
         <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
+        {!user ?(
+        <Link to="/login">Login</Link> 
+        ):(
+        <Link to="/createpost">Create Post</Link>
+        )}
+        
+
+        
+        
             { user && (
         <div className="">
             <p>{user?.displayName}</p>
