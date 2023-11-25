@@ -13,7 +13,6 @@ const Navbar = () => {
     const signUserOut = () =>{
         signOut(auth)
     }
-
   return (
     <>
         <Link to="/">Home</Link>
@@ -24,8 +23,6 @@ const Navbar = () => {
         )}
         
 
-        
-        
             { user && (
         <div className="">
             <p>{user?.displayName}</p>
