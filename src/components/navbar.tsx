@@ -24,11 +24,11 @@ const Navbar = () => {
         
 
             { user && (
-        <div className="">
+        <nav className="">
             <p>{user?.displayName}</p>
             <img src={user?.photoURL || ""} width="100" height="100"/>
             <button onClick={signUserOut}>Log Out</button>
-        </div>
+        </nav>
         )}
     </>
 
